@@ -13,20 +13,7 @@ if hist_button: # al hacer clic en el botón
     st.write('Creación de un histograma para el conjunto de datos de anuncios de venta de coches en estados unidos')
             
     # crear un histograma
-    fig = px.histogram(car_data, x="odometer")
-
-    # crear un grafico de dispersión
-    plt.scatter(x, y)
-    plt.title('Gráfico de Dispersión')
-    plt.xlabel('Eje X')
-    plt.ylabel('Eje Y')
-    plt.grid(True)
-    plt.show()
-        
-    # mostrar un gráfico Plotly interactivo
-    st.plotly_chart(fig, use_container_width=True)
-
-   
+    fig = px.histogram(car_data, x="odometer")   
 
 car_data = pd.read_csv('vehicles_us.csv') # leer los datos
 fig = px.scatter(car_data, x="odometer", y="price") # crear un gráfico de dispersión
