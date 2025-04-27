@@ -13,5 +13,5 @@ if hist_button: # al hacer clic en el botón
     # crear un histograma
     fig = px.histogram(car_data, x="odometer")   
 
-fig = px.scatter(car_data, x="odometer", y="price") # crear un gráfico de dispersión
-fig.show() # crear gráfico de dispersión
+fig2 = px.scatter(car_data, x="odometer", y="price") # crear un gráfico de dispersión
+fig2.show() # crear gráfico de dispersión
